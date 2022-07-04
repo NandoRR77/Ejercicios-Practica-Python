@@ -20,9 +20,9 @@ print(np.arange(0,9).reshape(3,3))
 print()
 print(np.arange(0,16).reshape(4,4)) 
 
-#Genera impresion ordenada y sin repetir valores de la lista 
-b = np.array([1,2,3,1,0,6,5,7,0,10,10,13,1,15])
-print(np.argwhere(b!=0)) #imprime todos los valores menos el 0, los ordena
+#Genera impresion ordenada de un array
+b = np.array([0,2,3,1,0,6,5,7,0,10,10,13,1,15])
+print(np.argwhere(b!=0)) #imprime todos los indices menos donde esté 0 y los ordena
 
 #Crear matriz 3x3x3 con elementos aleatorios
 c = np.random.random((3,3))
