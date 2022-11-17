@@ -1,4 +1,4 @@
-file = open("./nando.txt", "r")
+file = open("/Users/nandoramirez/PythonMinTic/Ejercicios/Ejercicios-Practica-Python/Python Sololearn/6.WorkWithFiles/nando.txt", "r")
 cont = file.read(4) #el 4 corresponde al número de bytes que imprimirá la instruccion
 cont = file.read(16)
 cont = file.read() #aunque acá no pasamos el número de bytes que debería imprimir, como quedó al final de las lecturas anteriores, 
