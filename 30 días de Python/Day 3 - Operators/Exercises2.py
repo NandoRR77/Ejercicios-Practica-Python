@@ -83,28 +83,27 @@ if number_years < 1:
 else:    
     seconds_lived = number_years * 31536000
     print(f'You have lived for {seconds_lived} seconds')
-
-'''
-
+    
 #23. Write a Python script that displays the following table
-
-numbers = []
-for i in range (1,6):
-    numbers.append(i)
-    
-print(numbers)    
-print(numbers[0])
-print(numbers[1])
-print(numbers[2])
-print(numbers[3])
-print(numbers[4])
-
-    
-
-'''
 1 1 1 1 1
 2 1 2 4 8
 3 1 3 9 27
 4 1 4 16 64
 5 1 5 25 125
+
 '''
+#23. Write a Python script that displays the following table
+for i in range(1,6): # imprime filas
+    for j in range(1,6): # imprime columnas
+        if(j == 2): 
+            print(1, end = '   ') #la segunda columna es de 1
+        elif(j == 3):
+            print(i*1, end = '   ') #la tercera columna es la primera * 1
+        elif(j == 4):
+            print(i**2, end = '   ') #la cuarta columna es la primera al cuadrado
+        elif(j == 5):
+            print(i**3, end = '   ') #la quinta columna es la primera al cubo
+        else:   
+            print(i, end = '   ') #imprime cada fila con el valor que tenga i
+    print('')#con esto deja un espacio cada que imprime una fila
+
