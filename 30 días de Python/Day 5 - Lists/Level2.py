@@ -74,7 +74,6 @@ print(f'The value {min_average:.4f} and {max_average:.4f} are equals? {compare}'
 
 
 
-
 #4. ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
 countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
 ch, ru, us, *scandic  = countries
@@ -486,14 +485,14 @@ if len(countries)%2 == 0:
     middle = int(len(countries)/2)
     countries1 = countries[0:middle]
     countries2 = countries[(middle+1):]
-    print(middle)
-    print(countries1)
-    print(countries2)
+    print(f'The middle of the list Countries is {middle}')
+    print(f'\n List 1:\n{countries1}')
+    print(f'\n List 2:\n{countries2}')
 else:
     middle = int(len(countries)/2)
     countries1 = countries[0:(middle+1)]
     countries2 = countries[(middle+2):]
-    print(middle)
-    print(countries1)
-    print(countries2)
+    print(f'The middle of the list Countries is {middle}')
+    print(f'\n List 1:\n{countries1}')
+    print(f'\n List 2:\n{countries2}')
 
