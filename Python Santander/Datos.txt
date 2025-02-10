@@ -1,0 +1,7 @@
+Datos de prueba para apertura de archivos con with
+
+'''
+with open("C:/Users/sslframirezr/Desktop/Ejercicios-Practica-Python/Python Santander/Datos.txt", "r") as archivo:
+    contenido = archivo.read()
+    print(contenido)
+'''
