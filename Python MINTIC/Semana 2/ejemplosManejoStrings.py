@@ -63,7 +63,7 @@ print("El próximo domingo cumples %d años" %mensaje6)
 mensaje7 = "Para ganar el curso de python debes estar siempre en modo onfire"
 print(mensaje7.count("on"))                     #voy a buscar y contar la cadena "on" en la cadena mensaje7, encontrará 2 en pythON y ONfire
 print(mensaje7.count("on",28))                  #voy a buscar y contar la cadena "on" en la cadena mensaje7 después de la posición 28, encontrará 1 ONfire
-print(mensaje7.count("on",0,28))                  #voy a buscar y contar la cadena "on" en la cadena mensaje7 entre la posición 0 y 28, encontrará 0
+print(mensaje7.count("on",0,28))                #voy a buscar y contar la cadena "on" en la cadena mensaje7 entre la posición 0 y 28, encontrará 0
 
 
 #Ejemplo 9 - buscar y reemplazar una cadena en otra
