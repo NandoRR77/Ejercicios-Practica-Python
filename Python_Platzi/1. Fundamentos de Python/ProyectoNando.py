@@ -14,7 +14,7 @@ while True:
     print(f'Round {rounds}')
     print('*' * 20)
     
-    print(f'Victorias usuario: {user_wins}')
+    print(f'\nVictorias usuario: {user_wins}')
     print(f'Victorias computadora: {computer_wins}')
     print(f'Empates: {draws}')
     
@@ -29,42 +29,45 @@ while True:
         continue
         
     computer_option = random.choice(options) #Escoger una opción aleatoria de la tupla o lista options
+    
+    print(f'\nOpción usuario: {user_option}')
+    print(f'Opción computadora: {computer_option}')
 
     if user_option == computer_option:
-        print('Empate!')
+        print('\nEmpate!')
         draws += 1
     elif user_option == 'piedra':
         if computer_option == 'tijera':
-            print('Piedra gana a tijera')
+            print('\nPiedra gana a tijera')
             print('Usuario gana!')
-            user_wins =+ 1
+            user_wins += 1
         else:
-            print('Papel gana a piedra')
+            print('\nPapel gana a piedra')
             print('Computadora gana')
             computer_wins += 1
     elif user_option == 'papel':
         if computer_option == 'piedra':
-            print('Papel gana a piedra')
+            print('\nPapel gana a piedra')
             print('Usuario gana')
             user_wins += 1
         else:
-            print('Tijera gana a papel')
+            print('\nTijera gana a papel')
             print('Computadora gana')
             computer_wins += 1
     elif user_option == 'tijera':
         if computer_option == 'papel':
-            print('Tijera gana a papel')
+            print('\nTijera gana a papel')
             print('Usuario gana')
             user_wins += 1
         else:
-            print('Piedra gana a tijera')
+            print('\nPiedra gana a tijera')
             print('Computadora gana')
             computer_wins += 1
             
-    if computer_wins == 3:
-        print(f'El ganador absoluto es la computadora. Victorias {computer_wins}')
+    if computer_wins == 2:
+        print(f'\nEl ganador absoluto es la computadora. Victorias {computer_wins}')
         break
     
-    if user_wins == 3:
-        print(f'El ganador absoluto es el usuario. Victorias {user_wins}')
+    if user_wins == 2:
+        print(f'\nEl ganador absoluto es el usuario. Victorias {user_wins}')
         break
