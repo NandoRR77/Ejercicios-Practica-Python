@@ -53,17 +53,17 @@ def check_rules(user_option, computer_option, user_wins, computer_wins, draws):
     return user_wins, computer_wins, draws
 
 
-def define_winner(user_wins,computer_wins):
+'''def define_winner(user_wins,computer_wins):
     
     while True :
         if computer_wins == 2:
             print(f'\nEl ganador absoluto es la computadora. Victorias {computer_wins}')
             break
-        else:
-            if user_wins == 2:
-                print(f'\nEl ganador absoluto es el usuario. Victorias {user_wins}')
-                break
+        elif user_wins == 2:
+            print(f'\nEl ganador absoluto es el usuario. Victorias {user_wins}')
+            break
         return user_wins, computer_wins
+'''
     
 def run_game():
     user_wins = 0
@@ -89,6 +89,11 @@ def run_game():
         
         user_wins, computer_wins, draws = check_rules(user_option,computer_option, user_wins, computer_wins, draws)
         
-        user_wins,computer_wins = define_winner(user_wins,computer_wins)
-        
+        if computer_wins == 2:
+            print(f'\nEl ganador absoluto es la computadora. Victorias {computer_wins}')
+            break
+        elif user_wins == 2:
+            print(f'\nEl ganador absoluto es el usuario. Victorias {user_wins}')
+            break
+                
 run_game()
