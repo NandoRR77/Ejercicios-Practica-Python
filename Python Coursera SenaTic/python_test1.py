@@ -40,8 +40,8 @@ def summarize_order(order):
 
     [IMPLEMENT ME]
         1. Calculate the total (subtotal + tax) and store it in a variable named total (rounded to two decimals)
-        2. Store only the names of all the items in the order in a list called names
-        3. Return names and total.
+        2. Store only the names of all the items in the order in a list called names - OK
+        3. Return names and total. - OK
 
     Args:
         order: list of dicts that contain an item name and price
@@ -54,13 +54,20 @@ def summarize_order(order):
     """
     #print_order(order)
     ### WRITE SOLUTION HERE
+    total = 0 
     
-    total = 0
     names = []
     
     for i in order:
         names.append(i['name'])
-    return names
+        total += i['price']
+        
+    total += ((total * 15) / 100)
+    total = float(round((total),2))
+    
+    return names, total
+
+    raise NotImplementedError()
 
 print(summarize_order(order))
 

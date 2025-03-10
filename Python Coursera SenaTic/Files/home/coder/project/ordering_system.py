@@ -29,6 +29,7 @@ def calculate_subtotal(order):
     
     for i in order:
         subtotal += i['price']
+        subtotal = round((subtotal),2)
     return float(subtotal)
 
     raise NotImplementedError()
@@ -61,7 +62,7 @@ def summarize_order(order):
     [IMPLEMENT ME]
         1. Calculate the total (subtotal + tax) and store it in a variable named total (rounded to two decimals)
         2. Store only the names of all the items in the order in a list called names - OK
-        3. Return names and total.
+        3. Return names and total. - OK
 
     Args:
         order: list of dicts that contain an item name and price
@@ -72,16 +73,20 @@ def summarize_order(order):
         return names, total
 
     """
-    print_order(order)
+    #print_order(order)
     ### WRITE SOLUTION HERE
-    total = 0 #Revisar
+    total = 0 
     
     names = []
     
     for i in order:
         names.append(i['name'])
+        total += i['price']
+        
+    total += ((total * 15) / 100)
+    total = float(round((total),2))
     
-    return names, total            
+    return names, total
 
     raise NotImplementedError()
 
@@ -125,6 +130,9 @@ def main():
     tax = calculate_tax(subtotal)
     print("Tax for the order is: " + str(tax))
 
+    total = round((subtotal + tax),2)
+    total = float(total)
+    print("The total for the order is: " + str(total))
     #items, subtotal = summarize_order(order)
 
 if __name__ == "__main__":
