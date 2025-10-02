@@ -1,0 +1,22 @@
+import utils #importar directamente el archivo mod.py
+
+keys, values = utils.get_population()
+
+print(keys, values)
+
+
+data = [
+    {
+       'Country': 'Colombia',
+       'Population': '500' 
+    },
+    {
+        'Country': 'Bolivia',
+        'Population': '200'  
+    }
+]
+
+country = input('Type Country = > ')
+
+result = utils.population_by_country(data, country)
+print(result)
