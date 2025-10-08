@@ -42,6 +42,7 @@ print('#Calcula el mayor de dos números')
 num1 = int(input('Ingrese el número 1 => '))
 num2 = int(input('Ingrese el número 2 => '))
 
+''' Con función
 def num_mayor(num1, num2):
     if num1 == num2:
         return print(f'Los números ingresados son iguales')
@@ -49,9 +50,14 @@ def num_mayor(num1, num2):
         return print(f'El número {num1} es mayor que el número {num2}')
     else: 
         return print(f'El número {num2} es mayor que el número {num1}')
-    return
 
 num_mayor(num1, num2)
+'''
+
+#Con lambda function
+mayor_menor = lambda num1,num2: '{num1} es mayor que {num2}' if num1 >= num2 else ('{num1} y {num2} son iguales' if num1 == num2 else '{num2} es mayor que {num1}')
+
+print(f'Al comparar los números, encontramos que {mayor_menor(num1, num2)}')
 
 print('\n****************************************************\n')
 
