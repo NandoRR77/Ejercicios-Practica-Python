@@ -65,6 +65,7 @@ print(greetings('Asabeneh'))
 
 
 print('\nFuncion con argumentos arbitrarios')
+
 #Funcion con argumentos arbitrarios (si no conocemos el número de argumentos, 
 #agregando * antes del nombre del parámetro.)
 
