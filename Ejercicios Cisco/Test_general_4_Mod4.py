@@ -1,1 +1,0 @@
-for line in open('text.t', 'rt'):
