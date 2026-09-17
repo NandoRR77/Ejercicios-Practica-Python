@@ -16,7 +16,7 @@ print(f'Transformación con map y lambda {numbers_v2}')
 
 
 print('-'*15)
-#Ejemplo con dos listas de diferente cantidad de elementos
+#Ejemplo con dos listas de diferente cantidad de elementos para unir
 num_1 = [5,6,7,8]
 num_2 = [9,10,11]
 
