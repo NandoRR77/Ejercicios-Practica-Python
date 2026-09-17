@@ -12,7 +12,7 @@ def high_ord_func (x, func):
 high_ord_func_v2 = lambda x, func : x + func(x)
 
 # En la variable result  voy a guardar el resultado de la ejecución de la funcion high_ord_fun
-# a la cual le estoy pasando como parametro el 2 (x) y una función (incremente)
+# a la cual le estoy pasando como parametro el 2 (x) y una función (increment)
 # en este caso, recibirá un 2 y al ejecutarse la función increment() que también recibe un 2 como 
 # parámetro, devolverá 2 + 1 = 3
 # El resultado total será 5
@@ -30,6 +30,6 @@ print(f'Ejeciución HOF lambdas {result_v2}')
 result_v3 = high_ord_func(2, lambda x: x + 1)
 print(result_v3)
 
-#Cambiando otra vez la lambda
+#Cambiando otra vez la lambda en la operación
 result_v3 = high_ord_func(3, lambda x: x * 5)
 print(result_v3)

@@ -81,14 +81,20 @@ print(f' Nueva Lista {lista}')
 # Cuenta cuántas veces aparece el número 2 en la lista usando count().
 # Comprueba si el número 7 está en la lista usando in.
 
-# Ejercicio 5: Copia vs. Referencia
-# Crea una lista llamada original con los números [1, 2, 3].
-# Crea una copia de la lista original llamada copia_1 usando slicing.
-# Crea otra copia llamada copia_2 usando copy().
-# Crea una referencia a la lista original llamada referencia.
-# Modifica el primer elemento de la lista referencia a 10.
-# Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
+print('\nEjercicio 4:')
+# Crea una lista con los siguientes números: [5, 2, 8, 1, 9, 4, 2].
+numeros = [5, 2, 8, 1, 9, 4, 2]
+print(f'*Crea una lista con los siguientes números: [5, 2, 8, 1, 9, 4, 2] {numeros}')
 
-# Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
-# Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
-# Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+# Ordena la lista de forma ascendente usando sort().
+numeros.sort()
+print(f'*Ordena la lista de forma ascendente usando sort().\n{numeros}') 
+
+# Cuenta cuántas veces aparece el número 2 en la lista usando count().
+conteo = numeros.count(2)
+print(f'*Cuenta cuántas veces aparece el número 2 en la lista usando count().\n El número 2 aparece {conteo} veces en la lista {numeros}') 
+
+# Comprueba si el número 7 está en la lista usando in.
+print(f'*Comprueba si el número 7 está en la lista usando in..\n El número 7 aparece en la lista {numeros}?  => {7 in numeros}') 
+
+
