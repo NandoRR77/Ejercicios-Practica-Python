@@ -57,10 +57,15 @@ print(canales[0]["espectadores"])
 prom_global = 0
 total_espectadores2 = 0
 
+#Con esto recorro los canales
 for canal in canales:
+    #acumulo los espectadores de cada canal
     total_espectadores2 += canal["espectadores"]
+    
+#calculo el promedio global
 prom_global = total_espectadores2 / len(canales)
 
+#Luego de tener el promedio global, filtro los canales en vivo y que los espectadores superen el promedio global
 for canal in canales:
     if canal["en_vivo"] and canal["espectadores"] > prom_global:
         print(canal)
