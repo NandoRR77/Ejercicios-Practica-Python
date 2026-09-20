@@ -32,17 +32,40 @@ canales = [
 ]
 
 #Creo la nueva lista
-#aprobaron = list(filter(lambda alumno: len(alumno["notas"]) > 0 and sum(alumno["notas"]) / len(alumno["notas"]) >= 8 ,clase ))
-espect_filtrados = []
+#Defino la variable para el promedio global
+prom_global = 0
+
+#Calculo el total de espectadores con un list comprehesion. Sumando solo los espectadores y usando
+#canal como iterador en canales
+total_espectadores = sum([canal["espectadores"] for canal in canales])
+
+#Calculo el promedio global con la variable total espectadores y la longitud del diccionario canales
+prom_global = (total_espectadores / len(canales))
+
+#print(f'Total espectadores con list comprehesion: {total_espectadores2}')
+#print(f'Promedio espectadores: {prom_global:.2f}')
+
+#Creo el filter con las dos condiciones dadas: canales en vivo y canal con espectadores superiores al promedio global
+espect_filtrados = list(filter(lambda canal: canal["en_vivo"] and canal["espectadores"] > prom_global, canales))
+
 
 '''
 #Solución tradicional
 #Con este print llego a las notas de un alumno en específico
-#print(clase[0]['notas'])
+print(canales[0]["espectadores"])
 
+prom_global = 0
+total_espectadores2 = 0
 
+for canal in canales:
+    total_espectadores2 += canal["espectadores"]
+prom_global = total_espectadores2 / len(canales)
+
+for canal in canales:
+    if canal["en_vivo"] and canal["espectadores"] > prom_global:
+        print(canal)
 '''
 
 #Imprimo los resultados
-print(f'\nLista con todos los canales: \n{canales}')
-print('\nLista con los alumnos con promedio mayor a 8', *espect_filtrados, sep="\n")
+print('\nLista con todos los canales:', *canales, sep="\n")
+print('\nLista con los canales en vivo y con promedio de espectadores mayor al promedio global:', *espect_filtrados, sep="\n")
