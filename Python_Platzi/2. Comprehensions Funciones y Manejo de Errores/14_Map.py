@@ -12,7 +12,7 @@ print(f'Transformación tradicional con for {numbers_v2}')
 
 #transformación con map y lambda
 numbers_v3 = list(map(lambda i: i * 2, numbers))
-print(f'Transformación con map y lambda {numbers_v2}')
+print(f'Transformación con map y lambda {numbers_v3}')
 
 
 print('-'*15)
