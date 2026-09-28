@@ -1,0 +1,11 @@
+ID_Usuario,Nombre_Usuario,Tipo_Suscripcion,Horas_Reproducidas,Dispositivos_Conectados,Region_Usuario,Monto_Mensual_USD
+1,Ana_Gomez,Premium,65,3,Norte,15.99
+2,Carlos_Perez,Basico,12,1,Sur,9.99
+3,Mariana_Tech,Familiar,85,5,Este,22.99
+4,Luis_G,Basico,45,2,Norte,9.99
+5,Ana_Martínez,Premium,30,2,Sur,15.99
+6,Juan_V,Familiar,110,4,Este,22.99
+7,Sofia_Corp,Premium,55,4,Oeste,15.99
+8,Pedro_S,Basico,8,1,Oeste,9.99
+9,Carlos_Labs,Premium,42,3,Sur,15.99
+10,Elena_M,Familiar,95,5,Norte,22.99
